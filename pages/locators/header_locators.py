@@ -1,5 +1,12 @@
+# pages/locators/header_locators.py
 from selenium.webdriver.common.by import By
 
+
 class HeaderLocators:
-    LOGO_SCOOTER = (By.XPATH, "//a[contains(@class,'ScooterLogo')]")
-    LOGO_YANDEX  = (By.XPATH, "//a[contains(@class,'YandexLogo')]")
+    """Локаторы элементов в шапке сайта (хедере)."""
+
+
+    LOGO_SCOOTER = (By.CLASS_NAME, "Header_LogoScooter__3lsAR")
+
+
+    LOGO_YANDEX = (By.CLASS_NAME, "Header_LogoYandex__3TSOI")

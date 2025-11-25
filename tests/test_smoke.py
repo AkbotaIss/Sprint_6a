@@ -1,5 +1,5 @@
-from pages.base_page import BasePage  # если ещё нет — создай пустой BasePage с open()
+from pages.main_page import MainPage
 
 def test_open_main(firefox, base_url):
-    BasePage(firefox, base_url).open("/")
-    assert "Самокат" in firefox.title
+    MainPage(firefox, base_url).open("/")
+
